@@ -1,0 +1,39 @@
+<!-- templates/index.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Wildfire Detector</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <div id="topbar">
+    <h1>Wildfire Detector</h1>
+    <div class="controls">
+      <button id="enableAlerts">Enable Alerts</button>
+      <button id="centerMe">Center on me</button>
+      <select id="radiusSelect">
+        <option value="25">Nearby 25 km</option>
+        <option value="50" selected>Nearby 50 km</option>
+        <option value="100">Nearby 100 km</option>
+        <option value="250">Nearby 250 km</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="map" ></div>
+
+  <div id="toast" class="hidden"></div>
+
+  <script>
+    // config values passed from backend
+    const NASA_MAP_KEY = "{{ nasa_map_key }}";
+    const POLL_INTERVAL_MS = {{ poll_interval_ms }};
+  </script>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
