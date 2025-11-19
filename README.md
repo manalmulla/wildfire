@@ -1,8 +1,3 @@
-Perfect!
-Here is your **fully customized, ready-to-paste README.md** for your GitHub repository:
-
----
-
 # 🚀 Wildfire – Real-Time Wildfire & Firepoint Monitoring System
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
