@@ -155,8 +155,9 @@ Example **requirements.txt**:
 ```
 Flask
 requests
-pandas
-gunicorn
+time
+io
+webbrowser
 ```
 
 (Add additional packages based on your project)
