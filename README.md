@@ -177,10 +177,6 @@ To contribute:
 
 ---
 
-## 📜 License
-
-MIT License © 2025 **manalmulla**
-
 ---
 
 ## ⭐ Support the Project
