@@ -1,4 +1,3 @@
-// static/js/main.js
 
 let map = L.map('map').setView([20, 0], 2);
 
@@ -18,7 +17,7 @@ let alertEnabled = false;
 const CONF_HIGH = 80, CONF_NORMAL = 60;
 let userRadiusCircle = null;
 
-// helper: determine color by confidence
+//determine color by confidence
 function colorForConfidence(c) {
   if (c >= CONF_HIGH) return '#ff0000';      // red
   if (c >= CONF_NORMAL) return '#ff8c00';    // orange
