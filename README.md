@@ -134,17 +134,14 @@ Ensures all three color levels are visible.
 
 The webpage includes a button like:
 
-**Enable Wildfire Alerts**
+**Enable Alerts**
 
 When a user clicks:
 
 * System checks current wildfire data
-* If a nearby event is found, user receives:
-  ✔️ On-screen notification
-  ✔️ Visual warning popup
-  ✔️ Optional sound alert
+* If a nearby event is found, user receives: On-screen notification
 
-All inside the web browser—no terminal messages.
+All inside the web browser.
 
 ---
 
