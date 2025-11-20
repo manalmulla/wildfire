@@ -165,15 +165,14 @@ gunicorn
 
 ## 🤝 Contributing
 
-Contributions are welcome!
-To contribute:
+🚫 Code contributions are not accepted.
+This repository is public for viewing and learning, but only the owner can modify the code.
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit changes
-4. Open a pull request
+💬 Suggestions and feedback are welcome!
+If you wish to propose improvements, report bugs, or share ideas, please open an Issue in the repository.
 
----
+👉 Issues are open for discussions, suggestions, & improvement requests.
+👉 Pull Requests are disabled to prevent direct code changes.
 
 ---
 
