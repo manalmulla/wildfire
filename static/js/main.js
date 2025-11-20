@@ -142,7 +142,7 @@ async function checkNearbyAndNotify() {
     if (nearby.length > 0) {
       const nearest = nearby[0];
       const body = `${nearest.title}\nConfidence: ${nearest.confidence}\nDist: ${nearest.distance_km} km`;
-      showToast(`<strong>Nearby firepoint!</strong><br/>${body}`, 8000);
+      showToast(`<strong>Nearby fire!</strong><br/>${body}`, 8000);
 
       if (Notification.permission === "granted") {
         new Notification("Firepoint nearby", {
@@ -160,7 +160,6 @@ async function checkNearbyAndNotify() {
   }
 }
 
-/* ✅ FIX: Restart alerts when radius changes */
 document.getElementById("radiusSelect").addEventListener("change", () => {
   const newRadius = Number(document.getElementById("radiusSelect").value);
 

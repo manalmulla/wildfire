@@ -2,8 +2,6 @@
 from flask import Flask, render_template, jsonify, request
 import requests
 import csv, webbrowser, time, threading
-from werkzeug.serving import is_running_from_reloader
-
 
 import io
 from datetime import datetime
@@ -104,6 +102,7 @@ def api_fires():
     eonet = fetch_eonet_fires()
     firms = fetch_firms_points()
     points = eonet + firms
+    print("🔥 Total firepoints detected:", len(points))
     # deduplicate by lat/lon within small tolerance
     unique = {}
     for p in points:
