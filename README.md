@@ -37,14 +37,12 @@ It uses **NASA FIRMS**, **NASA EONET**, and an interactive map interface to prov
 
 ## 📸 Screenshots
 
-(Add your screenshots if available)
+<img width="1919" height="875" alt="Screenshot 2025-11-20 025414" src="https://github.com/user-attachments/assets/06d2cb8c-913c-424a-8e2a-1c39648bca0c" />
 
-```
-/screenshots
-   ├── map_view.png
-   ├── alert_popup.png
-   └── dashboard.png
-```
+<img width="1919" height="868" alt="Screenshot 2025-11-20 030104" src="https://github.com/user-attachments/assets/8762bd81-e4df-41d3-b9af-6f7b25ae13b5" />
+
+<img width="1092" height="371" alt="Screenshot 2025-11-20 171501" src="https://github.com/user-attachments/assets/1553c899-7dcd-4d0e-9094-abab202d9b27" />
+
 
 ---
 
