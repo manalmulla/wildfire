@@ -134,17 +134,14 @@ Ensures all three color levels are visible.
 
 The webpage includes a button like:
 
-**Enable Wildfire Alerts**
+**Enable Alerts**
 
 When a user clicks:
 
 * System checks current wildfire data
-* If a nearby event is found, user receives:
-  ✔️ On-screen notification
-  ✔️ Visual warning popup
-  ✔️ Optional sound alert
+* If a nearby event is found, user receives: On-screen notification
 
-All inside the web browser—no terminal messages.
+All inside the web browser.
 
 ---
 
@@ -155,8 +152,9 @@ Example **requirements.txt**:
 ```
 Flask
 requests
-pandas
-gunicorn
+time
+io
+webbrowser
 ```
 
 (Add additional packages based on your project)
@@ -165,15 +163,14 @@ gunicorn
 
 ## 🤝 Contributing
 
-Contributions are welcome!
-To contribute:
+🚫 Code contributions are not accepted.
+This repository is public for viewing and learning, but only the owner can modify the code.
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit changes
-4. Open a pull request
+💬 Suggestions and feedback are welcome!
+If you wish to propose improvements, report bugs, or share ideas, please open an Issue in the repository.
 
----
+👉 Issues are open for discussions, suggestions, & improvement requests.
+👉 Pull Requests are disabled to prevent direct code changes.
 
 ---
 
