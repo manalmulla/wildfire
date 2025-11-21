@@ -1,7 +1,6 @@
 
 let map = L.map('map').setView([20, 0], 2);
 
-// nice base layer (you can replace with your NASA tile layer and inject NASA_MAP_KEY)
 const tileUrl = NASA_MAP_KEY && NASA_MAP_KEY !== "c0fd730a795a9fe1036b36f7526b4473"
   ? `https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png` // fallback
   : `https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png`;

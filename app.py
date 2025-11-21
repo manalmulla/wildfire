@@ -53,9 +53,6 @@ def fetch_eonet_fires():
         return []
 
 
-# -----------------------------------------------------
-# 🔥 FIXED FIRMS FUNCTION — UNIQUE REAL TIMESTAMPS
-# -----------------------------------------------------
 def fetch_firms_points():
     """Fetch NASA FIRMS CSV and return points with correct datetime."""
     if not NASA_FIRMS_CSV_URL:
@@ -73,15 +70,13 @@ def fetch_firms_points():
                 lat = float(row.get("latitude") or row.get("lat"))
                 lon = float(row.get("longitude") or row.get("lon"))
 
-                # --- Confidence mapping ---
                 conf_raw = row.get("confidence") or ""
                 if conf_raw.isdigit():
                     conf = int(conf_raw)
                 else:
-                    conf_map = {"low": 30, "nominal": 60, "normal": 60, "high": 90}
+                    conf_map = {"low": 30, "nominal": 60, "normal": 60, "high": 80}
                     conf = conf_map.get(conf_raw.lower(), 60)
 
-                # --- Correct FIRMS datetime parse ---
                 date_raw = row.get("acq_date", "")
                 time_raw = row.get("acq_time", "")
 
@@ -135,7 +130,6 @@ def api_fires():
 
     print("🔥 Total firepoints detected:", len(points))
 
-    # deduplicate
     unique = {}
     for p in points:
         key = f"{round(p['lat'],4)}_{round(p['lon'],4)}_{p['source']}"
