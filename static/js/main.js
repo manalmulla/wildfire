@@ -1,7 +1,7 @@
 
 let map = L.map('map').setView([20, 0], 2);
 
-const tileUrl = NASA_MAP_KEY && NASA_MAP_KEY !== "c0fd730a795a9fe1036b36f7526b4473"
+const tileUrl = NASA_MAP_KEY && NASA_MAP_KEY !== "YOUR_MAP_KEY"
   ? `https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png` // fallback
   : `https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png`;
 
